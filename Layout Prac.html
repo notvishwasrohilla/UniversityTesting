@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the columns */
+        .left-column {
+            background-color: #f2f2f2;
+        }
+
+        .right-column {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column left-column">
+                <h2>Left Column</h2>
+                <p>This is the content of the left column.</p>
+            </div>
+            <div class="column right-column">
+                <h2>Right Column</h2>
+                <p>This is the content of the right column.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
